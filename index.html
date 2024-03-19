@@ -1,1 +1,549 @@
-testing
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALL MEZZI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/Images/Mezzi.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		h1 {
+			color: #333;
+		}
+		
+		h2 {
+			color: #666;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		
+		li {
+			margin-bottom: 10px;
+		}
+		
+		.highlight {
+			color: #007bff;
+		}
+
+    .card {
+            margin: 10px;
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    .slideshow-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+      text-align: center;
+    }
+
+    .mySlides img {
+      width: 100%;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://lawsabonby.w3spaces.com/Images/Mezzi.jpeg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#Experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
+  </a>
+  <a href="#Licens" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-download w3-xxlarge"></i>
+    <p>Licensing and certification</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="#Experience" class="w3-bar-item w3-button" style="width:20% !important">EXPERIENCE</a>
+    <a href="#Licens" class="w3-bar-item w3-button" style="width:20% !important">Certification</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">All Mezzi.</h1>
+    <p>Programmer.</p>
+    <img src="https://lawsabonby.w3spaces.com/Images/Mezzi.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">All Mezzi</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am currently working at Flex Batam as a business systems analyst, where I have gained valuable experience over the past 5 years and 10 months. In my role, I am responsible for ensuring the smooth operation of the production system. I actively engage with users to understand their requirements and make necessary modifications and improvements to the system accordingly.
+<br><br>
+One of the highlights of my job is collaborating with the global IT team. Whenever a user requests changes or upgrades to the global system, I serve as the liaison between the users and the IT team. As a systems analyst, I thoroughly analyze user feedback and employ the waterfall model to identify the root cause of any issues. I then assemble the necessary team to address the problem and establish project timelines.
+<br><br>
+Once the system and associated problems are resolved, I prepare comprehensive documents for management and the IT team. These documents outline the root cause of the problem, how the system effectively resolves it, and the positive impact it has on users. I also provide insights on how to prevent similar issues from occurring in the future.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">C#</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">ASP.Net</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div><br>
+    <p class="w3-wide">Flutter</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div><br>
+    <p class="w3-wide">PHP</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div><br>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:88%"></div>
+    </div><br>
+    <p class="w3-wide">Ajax</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div><br>
+     <p class="w3-wide">HTML</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div><br>
+     <p class="w3-wide">WEB API</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+     <p class="w3-wide">AWS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div><br>
+     <p class="w3-wide">Microsoft Sql Server</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div><br>
+    <p class="w3-wide">MySQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:88%"></div>
+    </div><br>
+    
+    <button  class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="https://drive.google.com/file/d/1B2NwlbCrF7HL_p0vCLOsFf8yQ5HFiUaQ/view?usp=sharing" target="_blank"> <i class="fa fa-download"></i> Download Resume</a>
+    </button>
+  </div>
+  
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="Experience">
+    <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h2>Business system Analyst and Software Developer</h2>
+      <span class="highlight">Flextronic Batam (2018 - Present)</span>
+      <ul>
+        <li>Created a new web system for retrieval and changes to all required working properties using ASP.NET, AJAX, CSS, JavaScript, and SQL Server database.</li>
+        <li>Developed an IT dashboard that displays all tickets that have been opened by other departments and shows overdue and upcoming tickets using ASP.NET, AJAX, CSS, JavaScript, and SQL Server database.</li>
+        <li>Created an Operator Performance Tracking System that contains all employee data, manages health checks, skills, and certificates with email notifications and account blocking features using ASP.NET, AJAX, CSS, JavaScript, and SQL Server database.</li>
+        <li>Developed a desktop system for pallet validation using C# that validates pallet status, drossing time, and project profile with alarm and conveyor stop features.</li>
+        <li>Analyzed and corrected system errors in the production line, found root causes and corrective actions, and handled user data requests.</li>
+        <li>Improved existing systems and added new features.</li>
+      </ul>
+    <h2>PHP Programmer</h2>
+      <span class="highlight">Pulau sambu Guntung (01/2018-03/2018)</span>
+      <ul>
+        <li>Designed and developed web applications using PHP.</li>
+      </ul>
+
+    <h1 class="w3-text-light-grey">Education</h1>
+      <h2>Information System/S.kom </h2>
+        <span class="highlight">UPI YPTK, Padang (2013-2017)</span>
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="Licens">
+    <h2 class="w3-text-light-grey">Licensing and certification</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="row">
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1flPVM3C-TQWRb5L9nCIYNiMFvPRR-DWO/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Giving an talk on: Belajar Membuat Aplikasi Dekstop Menggunakan C#
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Nov 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1Pb-myuDuyI0TfWr7Sfz-La6Rh7G-mV5b/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Completion ASP.NET Core Security
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Jul 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+             <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1LZ4GivaOz_EY3CmRyE-64KHm6MyNnDW-/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Completion SQL Server Database Triggers
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Jun 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1V8YELA_JG9IWH-xMmecEZ8mbliENAh8B/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Building Web APIs with ASP.NET Core in .NET 6
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1BBxjesYZk4v7QAwLInQ1cdYu01GP7fCu/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            C# Algorithms
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/10BZhaA05zKAI2VX76RiEfqX0pneGKAZk/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Completion ASP.NET Web Forms Essential
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1_nuPu1FJsaZ3Zn9fsD4naLyJSv9T1ivA/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Fluent API Development in C#
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1qUvt9UVNe2ISUxFAf55mFefP67BmX-Ov/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            HTML Essential Training
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1iVBepC4xwUydI7ATy0oGoHHKCW4EUDBy/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Learning Microsoft SQL Server 2016
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4">
+            <a href="https://drive.google.com/file/d/1bYpTzUMY7FoLXo5ib397cf68WgcaJKAm/view?usp=sharing"  target="_blank" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-file-pdf icon"></i>
+                            Introducing .NET Core
+                        </h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            Published Mei 2022
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+  </div>
+
+  <div class="slideshow-container">
+  <div class="mySlides">
+    <img src="./Images/LongServiceFlexAllMezzi.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <img src="./Images/CertificateGreenBeltAllMezzi1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <img src="./Images/CertificateGreenBeltAllMezzi1.jpg" style="width:50%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+</div>
+
+<br>
+
+<div class="dot-container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Batam, Indonesia</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +62 85374237181</p>
+      <p><a href="https://wa.me/6285374237181" target="_blank">
+        <i class="fab fa-whatsapp fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> WhatApp: +62 85374237181
+        </a>
+      </p>
+      <p><a href="https://www.linkedin.com/in/all-mezzi-628519139/" target="_blank">
+        <i class="fab fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> linkedin: All Mezzi
+        </a>
+      </p>
+      <p><a href="mailto:all.mezzi.smart@gmail.com" target="_blank">
+        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: all.mezzi.smart@gmail.com</p>
+        </a>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-light-grey w3-xlarge">
+  <a href="https://www.linkedin.com/in/all-mezzi-628519139/" target="_blank">
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </a>
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+  setInterval(function() {
+    plusSlides(1);
+  }, 3000);
+</script>
+</body>
+</html>
+
